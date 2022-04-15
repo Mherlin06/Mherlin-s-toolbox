@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link href="index.css" rel="stylesheet">
+        <title>Mherlin's toolbox</title>
+
+    </head>
+    <body>
+        <header>
+
+        </header>
+        <main>
+            <h1>Mherlin's Toolbox</h1>
+            <section class="color-flipper">
+                <h2>Color Flipper</h2>
+                <div>
+                    Background-color: <span id="colorFlipperBgc"></span>
+                </div>
+                <button id="colorFlipperBtn" onclick="flipper()">Click me</button>
+                <script type="text/javascript" src="app.js\color-flipper.js"></script>
+            </section>
+            <section class="counter">
+                <h2>Counter</h2>
+                <span id="count">0</span>
+                <div>
+                    <button id="decrease" onclick="decrease()">decrease</button>
+                    <button id="increase" onclick="increase()">increase</button>
+                </div>
+                <button id="reset" onclick="reset()">reset</button>
+                <script type="text/javascript" src="app.js\counter.js"></script>
+            </section>
+
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+
+</html>
