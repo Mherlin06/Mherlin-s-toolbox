@@ -27,6 +27,29 @@ body{
     background-color: #f1f1f1;
     text-align: center;
 }
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    #toolbox{
+        color:#78c091;
+    }
+    li{
+        list-style: none;
+    }
+    .menu{
+        text-decoration: none;
+    }
+    .social-media{
+        display: flex;
+        img{
+            width: 50px;
+            filter: opacity(0.5) drop-shadow(0 0 0 #78c091) saturate(400%);
+        }       
+    }
+}
 .color-flipper{
     background-color: #fff;
     width: 300px;

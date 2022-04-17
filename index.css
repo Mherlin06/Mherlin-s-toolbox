@@ -41,6 +41,44 @@ body {
   text-align: center;
 }
 
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding: 20px;
+}
+
+header #toolbox {
+  color: #78c091;
+}
+
+header li {
+  list-style: none;
+}
+
+header .menu {
+  text-decoration: none;
+}
+
+header .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .social-media img {
+  width: 50px;
+  -webkit-filter: opacity(0.5) drop-shadow(0 0 0 #78c091) saturate(400%);
+          filter: opacity(0.5) drop-shadow(0 0 0 #78c091) saturate(400%);
+}
+
 .color-flipper {
   background-color: #fff;
   width: 300px;
