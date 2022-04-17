@@ -62,3 +62,48 @@ body{
         color: black;
     }
 }
+.review-carousel{
+    background-color: #fff;
+    width: 300px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 100px;
+    border: 2px solid #333;
+    padding: 50px;
+    h2{
+        margin: 20px;
+    }
+    h3{
+        margin: 10px;
+        color: #333;
+    }
+    span{
+        color: aqua;
+    }
+    p{
+        margin: 20px;
+    }
+    .selector{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .arrow{
+            height: 0px;
+            width: 0px;
+            cursor: pointer;
+            &__left{
+                border-top: 16px solid transparent;
+                border-bottom: 16px solid transparent;
+                border-right: 20px solid #8de698;
+            }
+            &__right{
+                border-top: 16px solid transparent;
+                border-bottom: 16px solid transparent;
+                border-left: 20px solid #e888a3;
+            }
+        }
+    }
+}
