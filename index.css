@@ -58,7 +58,7 @@ header {
   position: sticky;
   top: 0;
   background-color: #f1f1f1;
-  z-index: 999;
+  z-index: 5;
 }
 
 header .main-menu {
@@ -274,7 +274,7 @@ header .show-extend {
   height: auto;
 }
 
-.color-flipper {
+section {
   background-color: #fff;
   width: 300px;
   height: 200px;
@@ -304,24 +304,7 @@ header .show-extend {
 }
 
 .counter {
-  background-color: #fff;
-  width: 300px;
   height: 400px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  margin: 100px;
-  border: 2px solid #333;
 }
 
 .counter #count {
@@ -332,24 +315,10 @@ header .show-extend {
 }
 
 .review-carousel {
-  background-color: #fff;
-  width: 300px;
   height: 500px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 100px;
-  border: 2px solid #333;
   padding: 50px;
 }
 
@@ -397,5 +366,34 @@ header .show-extend {
   border-top: 16px solid transparent;
   border-bottom: 16px solid transparent;
   border-left: 20px solid #e888a3;
+}
+
+.modal .modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #78c091be;
+  z-index: -10;
+  visibility: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal .modal-overlay .modal-window button {
+  background-color: rgba(148, 9, 9, 0.699);
+}
+
+.modal .modal-open {
+  visibility: visible;
+  z-index: 10;
 }
 /*# sourceMappingURL=index.css.map */

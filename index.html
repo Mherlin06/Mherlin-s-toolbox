@@ -10,10 +10,10 @@
     <body>
         <header>
             <nav class="main-menu">
-                <section class="navbar__title">
+                <div class="navbar__title">
                     <img src="image\icons8-mana-100.png" alt="magic pot">
                     <h1 id="home">Mherlin's <span id="toolbox">Toolbox</span></h1>
-                </section>
+                </div>
                 <ul class="menu">
                     <li><a href="#home">home</a></li>
                     <li><a href="#">projects</a></li>
@@ -28,7 +28,7 @@
                     <div></div><div></div><div></div>
                 </buttton>
             </nav>
-            <section class="extend-menu" id="extend-menu">
+            <nav class="extend-menu" id="extend-menu">
                 <ul class="min-menu">
                     <li><a href="#home">home</a></li>
                     <li><a href="#">projects</a></li>
@@ -39,7 +39,7 @@
                     <li><a href="https://github.com/Mherlin06" target="_blank"><img src="./image/icons8-github.svg" alt="github"></a></li>
                     <li><a href="https://www.linkedin.com/in/hugues-mourice/" target="_blank"><img src="./image/icons8-linkedin-entouré.svg" alt="linkedin"></a></li>
                 </ul>
-            </section>
+            </nav>
             <script src="app.js\burger-menu.js"></script>
         </header>
         <main>            
@@ -72,11 +72,21 @@
                     <div class="arrow arrow__right" id="arrow-right"></div>
                 </div>                
                 <script src="app.js\review-carousel.js"></script>
-            </section>     
+            </section>
+            <section class="modal">
+                <h2>Modal project</h2>
+                <button class="modal-btn" id="modal-open-btn">open modal</button>
+                <div class="modal-overlay" id="modal-overlay">
+                    <section class="modal-window">
+                        <h2>modal window</h2>
+                        <button id="modal-close-btn">close</button>
+                    </section>
+                </div>
+                <script src="app.js\modal.js"></script>
+            </section> 
         </main>
         <footer>
 
         </footer>
     </body>
-
 </html>
