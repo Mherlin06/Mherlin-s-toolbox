@@ -5,25 +5,44 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <link href="index.css" rel="stylesheet">
         <title>Mherlin's toolbox</title>
-
+        <link rel="icon" href="image\icons8-mana-100.png">
     </head>
     <body>
         <header>
-            <h1 id="home">Mherlin's <span id="toolbox">Toolbox</span></h1>
-            <ul class="menu">
-                <li><a href="#home">home</a></li>
-                <li><a href="#">projects</a></li>
-                <li><a href="#">contact</a></li>
-            </ul>
-            <ul class="social-media">
-                <li><a href="https://mherlin06.github.io/Portfolio/" target="_blank"><img src="./image/icons8-avion-en-papier-100.png" alt="portfolio"></a></li>
-                <li><a href="https://github.com/Mherlin06" target="_blank"><img src="./image/icons8-github.svg" alt="github"></a></li>
-                <li><a href="https://www.linkedin.com/in/hugues-mourice/" target="_blank"><img src="./image/icons8-linkedin-entouré.svg" alt="linkedin"></a></li>
-            </ul>
-
+            <nav class="main-menu">
+                <section class="navbar__title">
+                    <img src="image\icons8-mana-100.png" alt="magic pot">
+                    <h1 id="home">Mherlin's <span id="toolbox">Toolbox</span></h1>
+                </section>
+                <ul class="menu">
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#">projects</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+                <ul class="social-media">
+                    <li><a href="https://mherlin06.github.io/Portfolio/" target="_blank"><img src="./image/icons8-avion-en-papier-100.png" alt="portfolio"></a></li>
+                    <li><a href="https://github.com/Mherlin06" target="_blank"><img src="./image/icons8-github.svg" alt="github"></a></li>
+                    <li><a href="https://www.linkedin.com/in/hugues-mourice/" target="_blank"><img src="./image/icons8-linkedin-entouré.svg" alt="linkedin"></a></li>
+                </ul>
+                <buttton class="burger-btn" id="burger-btn">
+                    <div></div><div></div><div></div>
+                </buttton>
+            </nav>
+            <section class="extend-menu" id="extend-menu">
+                <ul class="min-menu">
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#">projects</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+                <ul class="min-social-media">
+                    <li><a href="https://mherlin06.github.io/Portfolio/" target="_blank"><img src="./image/icons8-avion-en-papier-100.png" alt="portfolio"></a></li>
+                    <li><a href="https://github.com/Mherlin06" target="_blank"><img src="./image/icons8-github.svg" alt="github"></a></li>
+                    <li><a href="https://www.linkedin.com/in/hugues-mourice/" target="_blank"><img src="./image/icons8-linkedin-entouré.svg" alt="linkedin"></a></li>
+                </ul>
+            </section>
+            <script src="app.js\burger-menu.js"></script>
         </header>
-        <main>
-            
+        <main>            
             <section class="color-flipper">
                 <h2>Color Flipper</h2>
                 <div>
