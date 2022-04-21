@@ -6,6 +6,15 @@
 }
 
 button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100px;
   height: 50px;
   border-radius: 20px;
@@ -314,6 +323,16 @@ section {
   color: black;
 }
 
+.counter div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
 .review-carousel {
   height: 500px;
   -webkit-box-pack: justify;
@@ -395,5 +414,84 @@ section {
 .modal .modal-open {
   visibility: visible;
   z-index: 10;
+}
+
+.faq {
+  height: auto;
+  padding: 30px;
+}
+
+.faq .faq-card {
+  width: 90%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  border: 1px solid goldenrod;
+  border-radius: 10px;
+  margin: 15px 0;
+}
+
+.faq .faq-card .faq-question-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 10px;
+}
+
+.faq .faq-card .faq-question-card h3 {
+  text-align: start;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.faq .faq-card .faq-question-card button {
+  width: 15px;
+  height: 15px;
+  background-color: #f1f1f1;
+  color: goldenrod;
+  border: 1px solid goldenrod;
+}
+
+.faq .faq-card .faq-question-card .answer-hidden-btn {
+  display: none;
+}
+
+.faq .faq-card .faq-answer-card {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.faq .faq-card .faq-answer-card .seperate-line {
+  width: 90%;
+  height: 1px;
+  background-color: goldenrod;
+}
+
+.faq .faq-card .faq-answer-card p {
+  text-align: start;
+  padding: 10px 10px;
+}
+
+.faq .faq-card .faq-answer-card .show-answer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=index.css.map */
