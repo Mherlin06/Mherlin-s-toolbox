@@ -266,50 +266,44 @@ height: 400px;
 .faq{
     height: auto;
     padding: 30px;
+    background-color: #78c091;
+    h2{
+        margin-bottom: 10px;
+    }
     .faq-card{
-        width: 90%;
+        width: 100%;
         justify-content: flex-start;
         border: 1px solid goldenrod;
+        background-color: #fff;
         border-radius: 10px;
-        margin: 15px 0;
+        margin: 2px 0;
+        padding: 0 15px;
+        height: 44px;
+        overflow: hidden;
         .faq-question-card{
             display: flex;
             flex-direction: row;
             justify-content: flex-start;
             align-items: center;
-            padding: 5px 10px;
-            h3{
-                text-align: start;
-                flex: 1;
-            } 
-            button{
-                width: 15px;
-                height: 15px;
-                background-color: #f1f1f1;
-                color: goldenrod;
-                border: 1px solid goldenrod;        
-            }
-            .answer-hidden-btn{
-                display: none;
-            }          
+            padding: 10px 0 ;
         }
         .faq-answer-card{
-            display: none;
+            display: flex;
             flex-direction: column;
             align-items: center;
             .seperate-line{
-                width:90%;
+                width: 100%;
                 height: 1px;
                 background-color: goldenrod;
             }
             p{
                 text-align: start;
-                padding: 10px 10px;
-            }
-            .show-answer{
-                display: flex;
+                padding: 10px 0;
             }
         }
+    }
+    .faq-card-valid{
+        height:auto;
     }
 }
 

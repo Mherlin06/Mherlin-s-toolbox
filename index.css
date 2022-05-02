@@ -419,16 +419,25 @@ section {
 .faq {
   height: auto;
   padding: 30px;
+  background-color: #78c091;
+}
+
+.faq h2 {
+  margin-bottom: 10px;
 }
 
 .faq .faq-card {
-  width: 90%;
+  width: 100%;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
   border: 1px solid goldenrod;
+  background-color: #fff;
   border-radius: 10px;
-  margin: 15px 0;
+  margin: 2px 0;
+  padding: 0 15px;
+  height: 44px;
+  overflow: hidden;
 }
 
 .faq .faq-card .faq-question-card {
@@ -445,30 +454,13 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 5px 10px;
-}
-
-.faq .faq-card .faq-question-card h3 {
-  text-align: start;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-}
-
-.faq .faq-card .faq-question-card button {
-  width: 15px;
-  height: 15px;
-  background-color: #f1f1f1;
-  color: goldenrod;
-  border: 1px solid goldenrod;
-}
-
-.faq .faq-card .faq-question-card .answer-hidden-btn {
-  display: none;
+  padding: 10px 0;
 }
 
 .faq .faq-card .faq-answer-card {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -479,19 +471,17 @@ section {
 }
 
 .faq .faq-card .faq-answer-card .seperate-line {
-  width: 90%;
+  width: 100%;
   height: 1px;
   background-color: goldenrod;
 }
 
 .faq .faq-card .faq-answer-card p {
   text-align: start;
-  padding: 10px 10px;
+  padding: 10px 0;
 }
 
-.faq .faq-card .faq-answer-card .show-answer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.faq .faq-card-valid {
+  height: auto;
 }
 /*# sourceMappingURL=index.css.map */
