@@ -280,6 +280,7 @@ height: 400px;
         padding: 0 15px;
         height: 44px;
         overflow: hidden;
+        cursor: pointer;
         .faq-question-card{
             display: flex;
             flex-direction: row;
@@ -299,11 +300,15 @@ height: 400px;
             p{
                 text-align: start;
                 padding: 10px 0;
+                width: 100%;
             }
         }
     }
-    .faq-card-valid{
-        height:auto;
+    .faq-card-activ{
+    height: auto;    
+    }
+    .faq-card *{
+        pointer-events: none;
     }
 }
 

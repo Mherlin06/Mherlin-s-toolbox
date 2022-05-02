@@ -1,8 +1,14 @@
-const plusBtn = document.querySelectorAll('.faq-btn-plus');
-const minusBtn = document.querySelectorAll('.faq-btn-minus');
+const allFaqCards = document.querySelectorAll('.faq-card');
 
-plusBtn.forEach(button => { button.addEventListener('click', (e) => {
-    e.currentTarget.parentElement.nextSiblingElement.classList.toggle('show-answer');
-    });
+allFaqCards.forEach(card => { 
+    card.addEventListener('click', (e) => {
+        e.target.classList.add('faq-card-activ');
+
+        for(let i =0; i<allFaqCards.length; i++){
+            if(allFaqCards[i] !== e.target){
+                allFaqCards[i].classList.remove('faq-card-activ');
+            }
+        }
+    })
     
-});
+})
